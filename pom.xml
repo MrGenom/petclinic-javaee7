@@ -13,7 +13,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <version.maven>3.6.3</version.maven>
+        <version.maven>3.8.1</version.maven>
         <version.org.apache.maven.scm>1.11.2</version.org.apache.maven.scm>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -170,6 +170,21 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>4.10.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analyzers-common</artifactId>
+                <version>4.10.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>18.0</version>
+            </dependency>
             <!-- Define the version of JBoss' Java EE 6 APIs we want to import. Any
                 dependencies from org.jboss.spec will have their version defined by this
                 BOM -->
